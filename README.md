@@ -3,7 +3,7 @@
 
 <p align="center">
   A professional desktop application built with JavaFX for managing recruitment operations,<br>
-  including companies, job projects, and candidates — with secure email-based notifications.
+  including companies, job projects, and candidates .
 </p>
 
 ---
@@ -14,9 +14,9 @@
 |----------|-------------|----------------|
 | ![Dashboard](screenshots/dashboard.png) | ![Add Project](screenshots/add_project.png) | ![Add Candidate](screenshots/add_candidate.png) |
 
-| Company Management | Skill Management |
-|-------------------|------------------|
-| ![Companies](screenshots/companies.png) | ![Skills](screenshots/skills.png) |
+| Add Company                               | Account Information                                  | Skill Management |
+|-------------------------------------------|------------------------------------------------------|------------------|
+| ![Companies](screenshots/add_company.png) | ![Account Information](screenshots/account_info.png) |  ![Skills](screenshots/skills.png)    
 
 ---
 
@@ -24,7 +24,7 @@
 
 - 🏢 Company, Project & Candidate management  
 - 🔍 Real-time search and filtering  
-- 💬 Candidate skill management  
+- 💬 Recruiter skill management  
 - ✏️ Validation, update and delete functionality  
 - 🔐 Simple login & profile management  
 - 📧 Email notifications via JavaMail (password reset etc.)  
@@ -78,15 +78,17 @@ Make sure your MSSQL database is running and your credentials match.
 ```
 HiringManagementSystem/
 ├── src/
-│   ├── main/
-│   │   └── java/
-│   │       └── com/BRJavaProject/
-│   │           ├── ui/
-│   │           ├── model/
-│   │           ├── utils/
-│   │           └── database/
+│   └── main/
+│       ├── java/
+│       │   └── com/BRJavaProject/
+│       │       ├── ui/
+│       │       ├── model/
+│       │       ├── utils/
+│       │       └── database/
+│       └── resources/
+│           ├── com/BRJavaProject/ui/fxml/
+│           └── css/
 ├── screenshots/
-├── .env.example
 ├── .gitignore
 └── README.md
 ```
@@ -98,6 +100,3 @@ HiringManagementSystem/
 **Cenk Kağan Çakır**  
 [GitHub: Speellz](https://github.com/Speellz)  
 [LinkedIn: Cenk Kağan Çakır](https://www.linkedin.com/in/cenkkaancakir)
-
-> Full-stack thinking, clean structure, smart solutions.  
-> Built to work, styled to impress. ☕💻
