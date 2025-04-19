@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.BRJavaProject.ui.controllers.DashboardController" stylesheets="/css/style.css">
+    <!-- Main Dashboard Content -->
+    <BorderPane>
+        <top>
+            <VBox spacing="10" style="-fx-font-size: 18px; -fx-font-weight: bold;">
+                <HBox spacing="10" alignment="CENTER">
+                    <Label text="Hiring Management System" style="-fx-font-size: 18px;" HBox.hgrow="ALWAYS" />
+                </HBox>
+                <HBox spacing="10" alignment="CENTER_RIGHT">
+                    <Button text="Profile" onAction="#handleProfile" style="-fx-padding: 10;" />
+                </HBox>
+                <TextField fx:id="searchAllField" promptText="Search All..." />
+            </VBox>
+        </top>
+        <center>
+            <VBox spacing="10" style="-fx-padding: 10;">
+                <HBox spacing="20">
+                    <VBox spacing="10" HBox.hgrow="ALWAYS">
+                        <Label text="Candidates" style="-fx-font-size: 14px;" />
+                        <Button text="Add Candidate" onAction="#handleAddCandidate" />
+                        <TextField fx:id="candidateSearchField" promptText="Search Candidates..." />
+                        <TableView fx:id="candidateTable" prefHeight="400" prefWidth="500">
+                            <columns>
+                                <TableColumn fx:id="candidateNameColumn" text="Name" prefWidth="125" />
+                                <TableColumn fx:id="candidateSurnameColumn" text="Surname" prefWidth="100" />
+                                <TableColumn fx:id="candidateRoleColumn" text="Role" prefWidth="125" />
+                                <TableColumn fx:id="candidateAssignedProjectColumn" text="Assigned Project" prefWidth="150" />
+                                <TableColumn fx:id="candidateAddedByColumn" text="Added By" prefWidth="150" />
+                                <TableColumn fx:id="candidateActionColumn" text="Actions" prefWidth="200" />
+                            </columns>
+                        </TableView>
+                    </VBox>
+
+                    <!-- Company Table with Search -->
+                    <VBox spacing="10" HBox.hgrow="ALWAYS">
+                        <Label text="Companies" style="-fx-font-size: 14px;" />
+                        <Button text="Add Company" onAction="#handleAddCompany" style="-fx-padding: 10;" />
+                        <TextField fx:id="companySearchField" promptText="Search Companies..." />
+                        <TableView fx:id="companyTable" prefHeight="400" prefWidth="500">
+                            <columns>
+                                <TableColumn fx:id="companyNameColumn" text="Company Name" prefWidth="200" />
+                                <TableColumn fx:id="dateColumn" text="Date" prefWidth="125" />
+                                <TableColumn fx:id="companyActionColumn" text="Actions" prefWidth="150" />
+                            </columns>
+                        </TableView>
+                    </VBox>
+                </HBox>
+            </VBox>
+        </center>
+        <bottom>
+            <!-- Project Table with Search -->
+            <VBox spacing="10" style="-fx-padding: 10;">
+                <Label text="Projects" style="-fx-font-size: 14px;" />
+                <Button text="Add Project" onAction="#handleAddProject" style="-fx-padding: 10;" />
+                <TextField fx:id="projectSearchField" promptText="Search Projects..." />
+                <TableView fx:id="projectTable" prefHeight="200">
+                    <columns>
+                        <TableColumn fx:id="projectNameColumn" text="Project Name" prefWidth="250" />
+                        <TableColumn fx:id="projectCompanyColumn" text="Company Name" prefWidth="200" />
+                        <TableColumn fx:id="projectPositionColumn" text="Position Name" />
+                        <TableColumn fx:id="projectDateColumn" text="Project Date" prefWidth="150" />
+                        <TableColumn fx:id="assignedCandidatesColumn" text="Assigned Candidates" prefWidth="150" />
+                        <TableColumn fx:id="remainingCandidatesColumn" text="Remaining Candidates" prefWidth="175" />
+                        <TableColumn fx:id="projectActionColumn" text="Actions" prefWidth="200" />
+                    </columns>
+                </TableView>
+                <Button text="Log Out" onAction="#handleLogout" style="-fx-padding: 10;" BorderPane.alignment="CENTER" />
+            </VBox>
+        </bottom>
+    </BorderPane>
+</StackPane>

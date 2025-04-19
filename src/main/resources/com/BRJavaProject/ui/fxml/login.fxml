@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.BRJavaProject.ui.controllers.LoginController" spacing="10" style="-fx-padding: 20;" stylesheets="/css/style.css">
+    <HBox alignment="CENTER" style="-fx-padding: 20;">
+    <Label text="Login" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+    </HBox>
+    <TextField fx:id="usernameField" promptText="Username" />
+    <PasswordField fx:id="passwordField" promptText="Password" />
+    <HBox alignment="CENTER" style="-fx-padding: 20;">
+        <Button text="Login"
+                onAction="#handleLogin"
+                style="-fx-background-color: linear-gradient(to right, #4caf50, #81c784); -fx-text-fill: white;" />
+    </HBox>
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Sign Up" onAction="#handleSignUp" style="-fx-background-color: linear-gradient(to right, #2196f3, #64b5f6); -fx-text-fill: white;" />
+        <Button text="Forgot Password" onAction="#handleForgotPassword" style="-fx-background-color: linear-gradient(to right, #ff5722, #ff8a65); -fx-text-fill: white;" />
+    </HBox>
+    <Label fx:id="errorLabel" text="" style="-fx-text-fill: red; -fx-font-size: 12px;" />
+</VBox>

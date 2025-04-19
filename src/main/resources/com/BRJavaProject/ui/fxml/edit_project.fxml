@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.BRJavaProject.ui.controllers.EditProjectController" stylesheets="/css/style.css">
+    <center>
+        <GridPane hgap="10" vgap="10" style="-fx-padding: 20;">
+            <Label text="Project Name:" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+            <TextField fx:id="projectNameField" GridPane.rowIndex="0" GridPane.columnIndex="1" />
+
+            <Label text="Company Name:" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+            <ComboBox fx:id="companyComboBox" promptText="Select Company" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+
+            <Label text="Project Date:" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+            <DatePicker fx:id="projectDatePicker" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+
+            <Label text="Position Name:" GridPane.rowIndex="3" GridPane.columnIndex="0" />
+            <TextField fx:id="positionNameField" GridPane.rowIndex="3" GridPane.columnIndex="1" />
+
+            <Label text="Candidate Count:" GridPane.rowIndex="4" GridPane.columnIndex="0" />
+            <TextField fx:id="candidateCountField" GridPane.rowIndex="4" GridPane.columnIndex="1" />
+        </GridPane>
+    </center>
+    <bottom>
+        <HBox spacing="10" alignment="CENTER" style="-fx-padding: 10;">
+            <Button text="Save Changes" onAction="#handleSave" styleClass="button" />
+            <Button text="Cancel" onAction="#handleCancel" styleClass="button" />
+        </HBox>
+    </bottom>
+</BorderPane>
+
+

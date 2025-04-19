@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.BRJavaProject.ui.controllers.ProfileController" stylesheets="/css/style.css">
+    <top>
+        <HBox alignment="CENTER" style="-fx-padding: 20;">
+            <Label text="Profile" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+        </HBox>
+    </top>
+
+    <center>
+        <VBox spacing="15" alignment="CENTER" style="-fx-padding: 20;">
+            <Button text="Account Information" onAction="#handleAccountInformation" styleClass="button" />
+            <Button text="Skills" onAction="#handleSkills" styleClass="button" />
+        </VBox>
+    </center>
+    <bottom>
+        <Button text="Back" onAction="#handleBack" styleClass="button" style="-fx-padding: 10;" />
+    </bottom>
+</BorderPane>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.BRJavaProject.ui.controllers.SignUpController" spacing="10" style="-fx-padding: 20;" stylesheets="/css/style.css">
+    <Label text="Sign Up" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+    <TextField fx:id="nameField" promptText="Name" />
+    <TextField fx:id="surnameField" promptText="Surname" />
+    <TextField fx:id="emailField" promptText="Email" />
+    <TextField fx:id="phoneField" promptText="Phone" />
+    <TextField fx:id="usernameField" promptText="Username" />
+    <PasswordField fx:id="passwordField" promptText="Password" />
+    <PasswordField fx:id="confirmPasswordField" promptText="Confirm Password" />
+    <Label fx:id="errorLabel" text="" style="-fx-text-fill: red; -fx-font-size: 12px;" />
+    <Button text="Sign Up" onAction="#handleSignUp" style="-fx-background-color: linear-gradient(to right, #4caf50, #81c784); -fx-text-fill: white;" />
+    <Button text="Back" onAction="#handleLogin" style="-fx-background-color: linear-gradient(to right, #2196f3, #64b5f6); -fx-text-fill: white;" />
+</VBox>

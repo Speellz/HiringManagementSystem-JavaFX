@@ -1,0 +1,127 @@
+.root {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-padding: 10;
+    -fx-background-color: #ffffff;
+}
+
+.header {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-padding: 15px;
+    -fx-text-fill: #333;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #ddd;
+    -fx-border-width: 0 0 1px 0;
+}
+
+.button {
+    -fx-background-color: linear-gradient(to right, #FF512F, #F09819);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 8, 0, 0, 3);
+    -fx-scale-x: 1;
+    -fx-scale-y: 1;
+    -fx-transition: -fx-scale-x 0.3s ease, -fx-scale-y 0.3s ease, -fx-background-color 0.3s ease, -fx-effect 0.3s ease;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to right, #F09819, #FF512F);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 12, 0, 0, 4);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.button:pressed {
+    -fx-background-color: linear-gradient(to right, #FF512F, #D83A24);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 6, 0, 0, 2);
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
+
+.table-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #ddd;
+    -fx-border-width: 1px;
+    -fx-padding: 10px;
+    -fx-border-radius: 5px;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: linear-gradient(to right, #FF512F, #F09819);
+}
+
+.table-view .column-header {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+.table-view .table-row-cell {
+    -fx-background-color: white;
+    -fx-font-size: 13px;
+    -fx-border-width: 0px;
+    -fx-border-color: transparent;
+    -fx-text-fill: #333;
+}
+
+.table-view .table-row-cell:hover {
+    -fx-background-color: #f1f1f1;
+}
+
+.table-view .table-row-cell:even {
+    -fx-background-color: #fbfbfb;
+}
+
+.table-view .table-row-cell:odd {
+    -fx-background-color: #ffffff;
+}
+
+.table-view .table-row-cell:selected {
+    -fx-background-color: green;
+    -fx-text-fill: #333;
+}
+
+.table-button {
+    -fx-background-color: linear-gradient(to right, #FF512F, #F09819);
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-padding: 5px 10px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-alignment: center;
+}
+
+
+.table-view .table-row-cell:selected .button {
+    -fx-background-color: linear-gradient(to right, #FF512F, #F09819);
+    -fx-text-fill: white;
+}
+
+.table-view .table-row-cell:selected .button:hover {
+    -fx-background-color: linear-gradient(to right, #F09819, #FF512F);
+}
+
+.table-view .table-row-cell:selected .button:pressed {
+    -fx-background-color: linear-gradient(to right, #FF512F, #D83A24);
+}
+
+#logoutButton {
+    -fx-background-color: #d9534f;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+}
+
+#logoutButton:hover {
+    -fx-background-color: #c9302c;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 4);
+}

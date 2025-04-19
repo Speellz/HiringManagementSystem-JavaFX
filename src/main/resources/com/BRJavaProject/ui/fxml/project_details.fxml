@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.BRJavaProject.ui.controllers.ProjectDetailsController">
+    <children>
+        <VBox spacing="10" alignment="CENTER" prefWidth="400" prefHeight="300" AnchorPane.topAnchor="10" AnchorPane.bottomAnchor="10" AnchorPane.leftAnchor="10" AnchorPane.rightAnchor="10">
+            <Label text="Project Details" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+            <TextField fx:id="projectNameField" promptText="Project Name"/>
+            <TextField fx:id="projectIdField" promptText="Project ID" editable="false"/>
+            <TextField fx:id="companyField" promptText="Company Name"/>
+            <TextField fx:id="userField" promptText="User Name"/>
+            <TextArea fx:id="projectDescriptionArea" promptText="Project Description" prefRowCount="4"/>
+            <HBox spacing="10" alignment="CENTER">
+                <Button text="Save" onAction="#handleSave"/>
+                <Button text="Delete" onAction="#handleDelete"/>
+                <Button text="Cancel" onAction="#handleCancel"/>
+            </HBox>
+        </VBox>
+    </children>
+</AnchorPane>

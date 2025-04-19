@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.BRJavaProject.ui.controllers.SkillsController" stylesheets="/css/style.css">
+    <top>
+        <Label text="Skills" style="-fx-font-size: 18px; -fx-font-weight: bold;" BorderPane.alignment="CENTER"/>
+    </top>
+    <center>
+        <VBox spacing="10" style="-fx-padding: 20;">
+            <TableView fx:id="skillsTable" prefHeight="400">
+                <columns>
+                    <TableColumn fx:id="skillNameColumn" text="Skill Name" prefWidth="200"/>
+                    <TableColumn fx:id="proficiencyLevelColumn" text="Proficiency Level" prefWidth="150"/>
+                    <TableColumn fx:id="certificationColumn" text="Certification" prefWidth="200"/>
+                    <TableColumn text="Actions" fx:id="actionsColumn" prefWidth="150"/>
+                </columns>
+            </TableView>
+            <Button text="Add Skill" onAction="#handleAddSkill" style="-fx-padding: 10;"/>
+        </VBox>
+    </center>
+    <bottom>
+        <HBox spacing="10" alignment="CENTER" style="-fx-padding: 10;">
+            <Button text="Back" onAction="#handleBack" styleClass="button"/>
+        </HBox>
+    </bottom>
+</BorderPane>
