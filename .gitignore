@@ -37,4 +37,3 @@ application.properties
 .env
 email.env
 src/main/java/com/BRJavaProject/database/DatabaseConnection.java
-src/main/java/com/BRJavaProject/utils/EmailSender.java
